@@ -1,0 +1,71 @@
+.character-card-list .container {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.character-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0;
+    margin-top: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.character-card img:hover {
+    box-shadow: 0 10px 10px 0 rgba(255, 255, 255, 0.2);
+}
+
+.character-card a {
+    text-decoration: none;
+}
+
+.character-card--photo img {
+    transition: all .4s ease;
+    border-radius: 20px;
+    height: 150px;
+    width: 150px;
+}
+
+.character-card--title {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+    color: #FFF;
+    background: radial-gradient(circle, rgba(65,10,164,1) 0%, rgba(40,0,56,0.8) 100%);
+    font-family: 'Henny Penny', cursive;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.character--info-data {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+@media (width >= 600px) {
+    .character-card--title{ 
+        font-size: 24px;
+    }
+
+    .character-card--photo img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media (width >= 960px) {
+    .character-card--photo img {
+        height: 250px;
+        width: 250px;
+    }
+}

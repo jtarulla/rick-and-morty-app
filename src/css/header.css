@@ -1,0 +1,32 @@
+.header {
+    padding: 25px 0;
+    background: #FFFFFF40;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header--logo {
+    width: 150px;
+    height: auto;
+}
+
+.header--logo-github {
+    width: 35px;
+    height: auto;
+}
+
+@media (width >= 600px) {
+    .header {
+        padding: 40px 0;
+        background: #FFFFFF40;
+    }
+
+    .header--logo-github {
+        width: 50px;
+        height: auto;
+    }
+}

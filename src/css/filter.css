@@ -1,0 +1,18 @@
+.filter {
+    padding: 20px 0 40px;
+    display: flex;
+    margin: auto;
+}
+
+.filter input {
+    padding: 15px 10px;
+    font-size: 16px;
+    border-radius: 25px;
+    color: #280033;
+}
+
+@media (width >= 600px) {
+    .filter input {
+        font-size: 24px;
+    }
+}
