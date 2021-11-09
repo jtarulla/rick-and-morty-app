@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import Header from 'components/Header';
@@ -18,18 +18,19 @@ const CharacterPage = () => {
     });
     const { id } = useParams();
 
-    const getCharacterData = async () => {
-        try {
-            const response = await api.get(`/character/${id}`);
-            const data = response.data;
-            setCharacter(data);
-        } catch (error) {
-            toast.error(error.message);
-        }
-    };
+    const getCharacterData = useCallback(
+        async () => {
+            try {
+                const response = await api.get(`/character/${id}`);
+                const data = response.data;
+                setCharacter(data);
+            } catch (error) {
+                toast.error(error.message);
+            }
+        }, [id]
+    )
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    useEffect(() => getCharacterData(), []);
+    useEffect(() => getCharacterData(), [getCharacterData]);
 
     return (
         <div className="character-page">

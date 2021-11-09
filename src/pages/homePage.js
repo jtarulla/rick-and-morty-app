@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { toast } from 'react-toastify';
 import 'index.css'
 import api from 'services/api';
@@ -20,35 +20,32 @@ const HomePage = () => {
   });
   const [searchField, setSearchField] = useState('');
 
-  const getData = async url => {
-    try {
-        if (typeof url === 'string') {
-            const response = await api.get(url);
-            const data = response.data;
-            setInfo(data.info);
-            setCharacters(data.results);
-        }
-    } catch (error) {
-        searchField 
-        ? toast.warn("We couldn't find the character. Please, try a different one.")
-        : toast.error(error)
-    }
-  };
-
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  useEffect(() => {getData('/character/?page=0')}, []);
+  const getData = useCallback(
+    async url => {
+      try {
+          if (typeof url === 'string') {
+              const response = await api.get(url);
+              const data = response.data;
+              setInfo(data.info);
+              setCharacters(data.results);
+          }
+      } catch (error) {
+          searchField 
+            ? toast.warn("We couldn't find the character. Please, try a different one.")
+            : toast.error(error)
+      }
+    }, [searchField]
+  )
 
   const changeSearchField = event => {
     setSearchField(event);
-    getFilteredData();
   }
 
   const getFilteredData = () => {
     getData(`/character/?name=${searchField}`);
   } 
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  useEffect(getFilteredData, [searchField]);
+  useEffect(getFilteredData, [searchField, getData]);
 
   return (
     <div className="home">
