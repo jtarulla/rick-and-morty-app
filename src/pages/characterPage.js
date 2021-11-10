@@ -2,6 +2,7 @@ import React, { useEffect, useState, useCallback } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import Header from 'components/Header';
+import Loading from 'components/Loading';
 import api from 'services/api';
 import backArrowSvg from 'assets/arrow-backward.svg'
 import 'css/character-page.css'
@@ -17,15 +18,25 @@ const CharacterPage = () => {
         status: ''
     });
     const { id } = useParams();
+    const [loading, setLoading] = useState()
 
     const getCharacterData = useCallback(
         async () => {
             try {
+                setLoading(true);
                 const response = await api.get(`/character/${id}`);
                 const data = response.data;
                 setCharacter(data);
+
+                setTimeout(() => {
+                    setLoading(false);
+                }, 400)
             } catch (error) {
                 toast.error(error.message);
+
+                setTimeout(() => {
+                    setLoading(false);
+                }, 400)
             }
         }, [id]
     )
@@ -44,7 +55,16 @@ const CharacterPage = () => {
                 </Link>
                 <div className="character-page--detail">
                     <div className="character-page--photo">
-                        <img src={character.image} alt={character.name} />
+                        {
+                            loading ? 
+                            <Loading
+                                width={300}
+                                height={300}
+                                viewBox="0 0 250 200"
+                            />
+                            :
+                            <img src={character.image} alt={character.name} />
+                        }
                     </div>
                     <div className="character-page--info">
                         <h1 className="character-page--title">
