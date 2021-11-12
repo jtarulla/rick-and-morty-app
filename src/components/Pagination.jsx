@@ -17,9 +17,9 @@ const Pagination = ({handlePage, info, loading}) => {
         <>
             {
                 !loading &&
-                    <div className="pagination">
-                        <div className="pagination--counter">
-                            Page {getPageNumber()} of {info.pages}<br />
+                    <div className="pagination" data-testid="pagination-component">
+                        <div className="pagination--counter" data-testid="pagination-counter">
+                            Page { getPageNumber() } of {info.pages}<br />
                         </div> 
                         <div className="container">
                             <button

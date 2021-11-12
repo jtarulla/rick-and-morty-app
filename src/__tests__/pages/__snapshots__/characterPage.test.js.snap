@@ -1,0 +1,410 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Character page renders 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="character-page"
+      >
+        <header
+          class="header"
+        >
+          <div
+            class="container"
+          >
+            <a
+              href="/"
+            >
+              <img
+                alt="rick-and-morty-logo"
+                class="header--logo"
+                src="header-logo.png"
+              />
+            </a>
+            <a
+              href="https://github.com/jtarulla/rick-and-morty-app"
+            >
+              <img
+                alt="github-logo"
+                class="header--logo-github"
+                src="github-logo.png"
+              />
+            </a>
+          </div>
+        </header>
+        <div
+          class="container"
+        >
+          <a
+            href="/"
+          >
+            <div
+              class="character-page--back"
+            >
+              <img
+                alt="back-icon"
+                src="arrow-backward.svg"
+              />
+              Go Back
+            </div>
+          </a>
+          <div
+            class="character-page--detail"
+          >
+            <div
+              class="character-page--photo"
+            >
+              <svg
+                aria-labelledby="oa87em-aria"
+                height="300"
+                role="img"
+                viewBox="0 0 250 200"
+                width="300"
+              >
+                <title
+                  id="oa87em-aria"
+                >
+                  Loading...
+                </title>
+                <rect
+                  clip-path="url(#oa87em-diff)"
+                  height="100%"
+                  role="presentation"
+                  style="fill: url(#oa87em-animated-diff);"
+                  width="100%"
+                  x="0"
+                  y="0"
+                />
+                <defs>
+                  <clippath
+                    id="oa87em-diff"
+                  >
+                    <rect
+                      height="192"
+                      rx="20"
+                      ry="20"
+                      width="192"
+                      x="0"
+                      y="0"
+                    />
+                  </clippath>
+                  <lineargradient
+                    id="oa87em-animated-diff"
+                  >
+                    <stop
+                      offset="0%"
+                      stop-color="#f3f3f3"
+                      stop-opacity="1"
+                    >
+                      <animate
+                        attributeName="offset"
+                        dur="1s"
+                        keyTimes="0; 0.25; 1"
+                        repeatCount="indefinite"
+                        values="-2; -2; 1"
+                      />
+                    </stop>
+                    <stop
+                      offset="50%"
+                      stop-color="#5e369f"
+                      stop-opacity="1"
+                    >
+                      <animate
+                        attributeName="offset"
+                        dur="1s"
+                        keyTimes="0; 0.25; 1"
+                        repeatCount="indefinite"
+                        values="-1; -1; 2"
+                      />
+                    </stop>
+                    <stop
+                      offset="100%"
+                      stop-color="#f3f3f3"
+                      stop-opacity="1"
+                    >
+                      <animate
+                        attributeName="offset"
+                        dur="1s"
+                        keyTimes="0; 0.25; 1"
+                        repeatCount="indefinite"
+                        values="0; 0; 3"
+                      />
+                    </stop>
+                  </lineargradient>
+                </defs>
+              </svg>
+            </div>
+            <div
+              class="character-page--info"
+            >
+              <h1
+                class="character-page--title"
+              />
+              <p
+                class="character-page--data"
+              >
+                <b>
+                  Origin name: 
+                </b>
+                
+              </p>
+              <p
+                class="character-page--data"
+              >
+                <b>
+                  Species: 
+                </b>
+                
+              </p>
+              <p
+                class="character-page--data"
+              >
+                <b>
+                  Status: 
+                </b>
+                
+              </p>
+              <p
+                class="character-page--data"
+              >
+                <b>
+                  Gender: 
+                </b>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="character-page"
+    >
+      <header
+        class="header"
+      >
+        <div
+          class="container"
+        >
+          <a
+            href="/"
+          >
+            <img
+              alt="rick-and-morty-logo"
+              class="header--logo"
+              src="header-logo.png"
+            />
+          </a>
+          <a
+            href="https://github.com/jtarulla/rick-and-morty-app"
+          >
+            <img
+              alt="github-logo"
+              class="header--logo-github"
+              src="github-logo.png"
+            />
+          </a>
+        </div>
+      </header>
+      <div
+        class="container"
+      >
+        <a
+          href="/"
+        >
+          <div
+            class="character-page--back"
+          >
+            <img
+              alt="back-icon"
+              src="arrow-backward.svg"
+            />
+            Go Back
+          </div>
+        </a>
+        <div
+          class="character-page--detail"
+        >
+          <div
+            class="character-page--photo"
+          >
+            <svg
+              aria-labelledby="oa87em-aria"
+              height="300"
+              role="img"
+              viewBox="0 0 250 200"
+              width="300"
+            >
+              <title
+                id="oa87em-aria"
+              >
+                Loading...
+              </title>
+              <rect
+                clip-path="url(#oa87em-diff)"
+                height="100%"
+                role="presentation"
+                style="fill: url(#oa87em-animated-diff);"
+                width="100%"
+                x="0"
+                y="0"
+              />
+              <defs>
+                <clippath
+                  id="oa87em-diff"
+                >
+                  <rect
+                    height="192"
+                    rx="20"
+                    ry="20"
+                    width="192"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+                <lineargradient
+                  id="oa87em-animated-diff"
+                >
+                  <stop
+                    offset="0%"
+                    stop-color="#f3f3f3"
+                    stop-opacity="1"
+                  >
+                    <animate
+                      attributeName="offset"
+                      dur="1s"
+                      keyTimes="0; 0.25; 1"
+                      repeatCount="indefinite"
+                      values="-2; -2; 1"
+                    />
+                  </stop>
+                  <stop
+                    offset="50%"
+                    stop-color="#5e369f"
+                    stop-opacity="1"
+                  >
+                    <animate
+                      attributeName="offset"
+                      dur="1s"
+                      keyTimes="0; 0.25; 1"
+                      repeatCount="indefinite"
+                      values="-1; -1; 2"
+                    />
+                  </stop>
+                  <stop
+                    offset="100%"
+                    stop-color="#f3f3f3"
+                    stop-opacity="1"
+                  >
+                    <animate
+                      attributeName="offset"
+                      dur="1s"
+                      keyTimes="0; 0.25; 1"
+                      repeatCount="indefinite"
+                      values="0; 0; 3"
+                    />
+                  </stop>
+                </lineargradient>
+              </defs>
+            </svg>
+          </div>
+          <div
+            class="character-page--info"
+          >
+            <h1
+              class="character-page--title"
+            />
+            <p
+              class="character-page--data"
+            >
+              <b>
+                Origin name: 
+              </b>
+              
+            </p>
+            <p
+              class="character-page--data"
+            >
+              <b>
+                Species: 
+              </b>
+              
+            </p>
+            <p
+              class="character-page--data"
+            >
+              <b>
+                Status: 
+              </b>
+              
+            </p>
+            <p
+              class="character-page--data"
+            >
+              <b>
+                Gender: 
+              </b>
+              
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

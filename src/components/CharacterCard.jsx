@@ -14,7 +14,7 @@ const CharacterCard = ({
                 loading ? <Loading />
                 :
                 <Link to={`/character/${id}`}>
-                    <div className="character-card">
+                    <div className="character-card" data-testid="character-card">
                         <div className="character-card--photo">
                             <img src={image} alt={name} />
                         </div>

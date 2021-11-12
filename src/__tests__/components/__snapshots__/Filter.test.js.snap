@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filter component renders 1`] = `
+<input
+  data-testid="input-filter"
+  placeholder="filter by name"
+/>
+`;
